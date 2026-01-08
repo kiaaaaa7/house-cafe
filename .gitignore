@@ -52,4 +52,4 @@ phpunit.xml.dist
 /tests/
 
 # LARAGON SPECIFIC
-/laragon/
+/laragon/.env
