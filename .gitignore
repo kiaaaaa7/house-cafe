@@ -1,74 +1,55 @@
-# ============================================
-# HOUSE CAFE - GIT IGNORE FILE
-# ============================================
-
-# Environment files
+# ENVIRONMENT
 .env
 .env.local
-.env.*.local
+.env.production
+.env.example
 
-# Composer
-/vendor/
-composer.lock
+# UPLOADS
+/public/uploads/*
+!/public/uploads/.gitkeep
 
-# Logs
+# LOGS
 *.log
 logs/
 error_log
 
-# Runtime data
+# CACHE
+cache/
+tmp/
+sess_*
+
+# DATABASE BACKUPS
 *.sql
-*.sqlite
-*.sqlite3
-
-# Uploads (kecuali placeholder)
-/public/uploads/*
-!public/uploads/.gitkeep
-
-# Backup files
-*.bak
 *.backup
+*.bak
 
-# IDE files
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+
+# OS
 .DS_Store
 Thumbs.db
-
-# OS generated files
-ehthumbs.db
 Desktop.ini
 
-# Cache
-cache/
-tmp/
-
-# Session files
-sess_*
-
-# Development files
-composer.phar
+# DEPENDENCIES
+/vendor/
+/node_modules/
+composer.lock
 package-lock.json
 yarn.lock
-node_modules/
 
-# Testing
+# DEVELOPMENT
+composer.phar
+phpunit.xml
+phpunit.xml.dist
+/.phpunit.result.cache
+
+# TESTING
 /test/
 /tests/
 
-# Local config overrides
-config.local.php
-db.local.php
-
-# Database file (kecuali schema awal)
-house_cafe_backup.sql
-*.backup.sql
-
-# ============================================
-# JANGAN IGNORE FILE INI:
-# ============================================
-# !house_cafe_schema.sql
-# !README.md
-# !composer.json
+# LARAGON SPECIFIC
+/laragon/
